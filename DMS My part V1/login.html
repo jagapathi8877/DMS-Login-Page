@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | Disaster Management</title>
+  <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+
+<div class="auth-wrapper">
+  <div class="auth-card">
+
+    <div class="auth-header">
+      <h1>System Login</h1>
+      
+    </div>
+
+    <form onsubmit="login(event)">
+      <div class="form-group">
+        <label>Role</label>
+        <select id="role" required>
+          <option value="">Select role</option>
+          <option value="user">User</option>
+          <option value="admin">Admin</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>User ID</label>
+        <input type="text" id="loginUserId" required>
+      </div>
+
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" id="loginPassword" required>
+      </div>
+
+      <div class="auth-actions">
+        <button type="submit">Login</button>
+      </div>
+    </form>
+
+    <div class="auth-footer">
+      New user? <a href="signup.html">Create an account</a>
+    </div>
+
+  </div>
+</div>
+
+<script src="auth.js"></script>
+</body>
+</html>
