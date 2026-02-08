@@ -24,7 +24,7 @@ function signup(e) {
   localStorage.setItem("users", JSON.stringify(users));
 
   alert("Account created successfully");
-  window.location.href = "login.html";
+  window.location.href = "index.html";
 }
 
 function login(e) {
@@ -60,3 +60,4 @@ const emailInput = () => document.getElementById("email").value.trim();
 const usernameInput = () => document.getElementById("username").value.trim();
 const passwordInput = () => document.getElementById("password").value;
 const confirmInput = () => document.getElementById("confirmPassword").value;
+
